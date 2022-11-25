@@ -162,6 +162,6 @@ if uploaded_file:
         df_escrito=pd.read_csv('resultados_busqueda_vies.csv',sep=';',encoding='latin1')
         file_x=to_excel(df_escrito)
         st.download_button(label='📥 Bajar los resultados actuales en EXCEL',data=file_x, file_name=new_file_name_xlsx)   
-   except Exception :
+    except Exception :
         st.write("Debido a un problema de tipos no es posible generar el fichero en MS Excel.")
 
